@@ -1,6 +1,10 @@
 pipeline {
     agent any
     stages {
+
+        steps ('Initialize') {
+            echo 'Initializing app build'
+        }
         steps('Build') {
             echo 'Building app'
         }
